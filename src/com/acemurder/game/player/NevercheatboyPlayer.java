@@ -12,7 +12,7 @@ import java.util.List;
 import static com.acemurder.game.Poker.Point.*;
 import static com.acemurder.game.Poker.Suit.*;
 
-public class Nevercheatboy implements Player {
+public class NevercheatboyPlayer implements Player {
     private Manager manager;
     private static HashMap<Player,List<Poker>> handpoker=null;
     private static List<Player> row_people=null;
@@ -69,6 +69,7 @@ public class Nevercheatboy implements Player {
 
     @Override
     public void onResult(int time, boolean isWin, List<Poker> pokers) {
-
+        if (isWin)
+            System.out.println("子来大佬带我飞");
     }
 }
